@@ -13,8 +13,8 @@ private:
   uint8_t m_sin_look_up_table[SIN_LOOKUP_TABLE_SIZE];
 public:
   SinFuncLookup(); //Fills the look-up table  
-  uint8_t getValue(uint8_t index);
-  uint8_t getLastIndex();
+  uint8_t getValue(unsigned int index);
+  unsigned int getLastIndex();
 };
 
 

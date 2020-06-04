@@ -26,10 +26,10 @@ SinFuncLookup::SinFuncLookup()
 {
 }
 
-uint8_t SinFuncLookup::getValue(uint8_t index){  
+uint8_t SinFuncLookup::getValue(unsigned int index){  
     return m_sin_look_up_table[index]; //this should be fine without checking the index if i use uint8
 }
 
-uint8_t SinFuncLookup::getLastIndex(){
+unsigned int SinFuncLookup::getLastIndex(){
   return m_lookup_size-1;
 }

@@ -6,6 +6,7 @@
 class PwmPin{
   private:
   int m_pin;
+  void setPwmFrequencyTo32KHz(int pin); //make PWM inaudible
   public:
   void initialize(int pin);
   void write_pwm(uint8_t duty_cycle);
